@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html>
+
+    <head>
+
+        <title>Example Domain</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <style type="text/css">
+
+            body{
+                background-color: black;
+            }
+
+            h1{
+                color: red;
+            }
+
+        
+        </style>  
+
+    </head>
+
+    <body>
+
+        <div id="text_section">
+            <h1 id="text_disply">    </h1>
+            <p> <input type="text" id="user_input"> <button id="display">display</button> </p>
+        </div>
+
+        
+        <script type="text/javascript">
+            
+            document.getElementById("display").onclick = function(){
+                var input = "";
+                input = document.getElementById("user_input").value;
+                document.getElementById("text_disply").innerHTML = input;
+
+            }
+   
+
+
+    
+        </script>
+
+    </body>
+
+</html>

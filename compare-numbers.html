@@ -1,0 +1,95 @@
+<html>
+
+    <head>
+
+        <title> compare number </title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <style type="text/css">
+            body{
+                background-color: black;
+            }
+
+            #user{
+                background-color: white;
+            }
+
+            #num1{
+                color: none;
+                background-color: none;
+
+            }
+
+            #num2{
+                color: none;
+                background-color: none;
+            }
+
+            .numbers{
+                color: orangered;
+                background-color: blueviolet;
+            
+            }
+            #user{
+                height: 50%;
+                width: 50%;
+            }
+
+
+        
+        </style>  
+
+    </head>
+
+    <body>
+
+        <div id="user">
+            <p> choose 2 numbers </p>
+            <p><input type="number" class="numbers" placeholder="Number1" id="num1"></p> 
+            <p><input type="number" class="numbers" placeholder="number2" id="num2"></p> 
+            <button id="compare">compare</button></p>
+        </div>
+
+        <div>
+            <p id="image1">       </p>
+            <p id="image2">       </p>
+        </div>
+
+        <div> 
+
+        </div>
+
+        
+        <script type="text/javascript">
+
+            document.getElementById("compare").onclick = function(){
+                var n1 ="";
+                var n2 ="";
+                n1 = document.getElementById("num1").value;
+                n2 = document.getElementById("num2").value;
+                if(n1 == n2){
+                    alert ("they are the same")
+                }
+                else if(n1 > n2){
+                    alert (n1 + " is bigger than " + n2 );
+                }
+                else{ //building an if statement last else statement will not require condition !! remmeber!!
+                    alert(n1 + " is smaller than " + n2);
+                }
+
+                
+            }
+        </script>
+        
+        <div class=""> 
+            <p> == </p>
+            
+
+        </div>
+
+    </body>
+
+</html>

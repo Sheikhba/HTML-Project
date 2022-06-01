@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Sheikhba</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <style type="text/css">
+            p {
+                color: rgb(255, 255, 255);
+            }
+            body{
+                background-color: black;
+            }
+            #loginbox{
+                background-color: aqua;
+                float:none;
+                position: static;
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
+
+                
+            }
+            .clear-float{
+                clear:both;
+
+            }
+
+            #big{
+                margin: 500px 500px 500px 500px;
+                padding: 500px 500px 500px 500px;
+            }
+        
+        </style>
+
+
+    </head>
+
+
+    <body>
+       <p id="big">gfghjkjhgfdfgyh</p>
+        <div id="loginbox">
+            <h1> Login </h1>
+            <p> enter password to login </p>
+            <p><input type="text" id="password"> <button id="checkpassword">submit</button></p>
+
+        </div>
+        <p id="big">fdsdfghjikolkijuhygtfrdeswsedrftgyhu</p>
+        <div class="clear-float"></div>
+        
+        
+        
+
+    </body>
+
+    
+    <script type="text/javascript">
+        document.getElementById("checkpassword").onclick = function() {
+            var sheikh = "sheikhba"
+
+            if (document.getElementById("password").value == sheikh){
+                alert("Well done! you got it!");
+                location.href = "project.html";//after the password is right you get sent to the project page using the location.href
+            } else {
+            alert("Nope, try again!");
+        }
+        }
+    </script>
+
+</html>
